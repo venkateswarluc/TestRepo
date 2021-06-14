@@ -28,8 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Compile
         run: csc HelloWorld.cs
-      - name: Execute 
-        run: HelloWorld
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
