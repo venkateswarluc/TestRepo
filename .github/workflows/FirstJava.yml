@@ -29,11 +29,12 @@ jobs:
       - name: Compile
         run: javac MyFirstJava.java
       - name: Execute
-        run: java MyFirstJava
-      - name: code coverage
-        run: npx check-coverage /home/user/firstDir/MyFirstJava.java
-
-      # Runs a set of commands using the runners shell
+      - run: java MyFirstJava
+      - name: Set code coverage commit status 📫
+        run: npx -p check-code-coverage set-gh-status
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
