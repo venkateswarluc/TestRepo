@@ -19,5 +19,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
       - name: Run build script
-        run: /home/user/firstDir/sum.sh
+        run: ./.github/firstDir/sum.sh
         shell: bash
