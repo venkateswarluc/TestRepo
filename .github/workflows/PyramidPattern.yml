@@ -36,6 +36,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Code coverage-reporter
-        uses: tj-actions/coverage-reporter@v3.1
  
