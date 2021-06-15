@@ -29,16 +29,7 @@ jobs:
       - name: compile
         run: javac PyramidPattern.java
       - name: execute
-        run: java PyramidPattern
-
-      - name: Checkout 🛎
-        uses: actions/checkout@v2
-
-      - name: Install NPM dependencies 📦
-        uses: bahmutov/npm-install@v1
-
-      - name: Unit tests 🧪
-        run: npm test   
+        run: java PyramidPattern   
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
